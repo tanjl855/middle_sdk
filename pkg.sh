@@ -7,7 +7,7 @@ output=$cpwd/build
 
 #### Package ####
 echo "Setting Package Environments..."
-srv_name=kuxiao-sdk
+srv_name=tjl-sdk
 srv_out=$output/$srv_name
 go_path=`go env GOPATH`
 go_os=`go env GOOS`
@@ -16,7 +16,7 @@ go_arch=`go env GOARCH`
 ##build normal
 echo "Building $srv_name normal executor..."
 mkdir -p $srv_out
-go build -v -o $srv_out kuxiao-sdk
+go build -v -o $srv_out tjl-sdk
 mkdir -p $srv_out/conf
 ##cp...配置文件
 
