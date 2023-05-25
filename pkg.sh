@@ -30,4 +30,4 @@ tar -czvf $output/$out_tar $srv_name
 
 cd $cpwd
 
-echo "Package $out_tar_name done..."
+echo "Pac~age $out_tar_name done..."
