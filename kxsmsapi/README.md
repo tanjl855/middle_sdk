@@ -1,6 +1,6 @@
 ## Aliyun & TianYiyun
 
-需要在aliyun.go中配置aliyunKey进行使用
+需要在aliyun.go中配置aliyunKey进行使用 -> 后续需要进行优化
 
 1. 通过NewAliyunAdaptor初始化阿里云请求结构、通过NewTianYiyunAdaptor初始化天翼云请求结构
 
