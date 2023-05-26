@@ -6,6 +6,7 @@ import (
 	"sync"
 )
 
+// 单例模式
 type singleton struct {
 	Value int
 }

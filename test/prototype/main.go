@@ -4,6 +4,7 @@ import (
 	"fmt"
 )
 
+// 原型模式
 type PrototypeManager struct {
 }
 
