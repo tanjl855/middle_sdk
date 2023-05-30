@@ -5,6 +5,7 @@ import (
 	"fmt"
 )
 
+// 适配器模式
 type Adaptor interface {
 	Send(phone string) (*SmsResponse, error)
 }
@@ -17,6 +18,7 @@ type Config struct {
 	OnRepeat  func() error       // [Aliyun]SignatureNoceUsed重复错误时调用
 	OnError   func(string) error // 发送返回其他错误时调用 传入参数为smsRes.Code
 	OnSuccess func(string) error // 发送成功时调用 传入参数为smsRes.SmsType（当前用的是阿里云or天翼云）
+	OnNotify  func() error
 }
 
 type SmsResponse struct {
